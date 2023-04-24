@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width , inital-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awespme/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="Login_Sign_Up.html">LOGIN</a></li>
+                        <li><img src="images/moon.png" id="icon"></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 style="height: 50vh; margin-top: 100px; text-align: center; color: #fff;">Our Certificate & Online Program FOR 2023</h1>    
+        </section>
+        <!--- bLOG pAGE cONTENT ----->
+
+        <section class="blog-content">
+
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg">
+                    <h2>Our Certificate & Online Programs For 2021</h2>
+                    <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut veneatis ex, et dapibus purus.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut veneatis ex, et dapibus purus.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut veneatis ex, et dapibus purus.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut veneatis ex, et dapibus purus.</p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <div class="comment-form">
+                            <form action=""; method="post"; onsubmit="sendEmail(); reset(); return false;">
+                                <input type="text" placeholder="Enter Name">
+                                <input type="email" placeholder="Enter Email">
+                                <textarea rows="5" placeholder="Your comment"></textarea>
+                                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                            </form>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>32</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+
+        <section class="footer">
+            <h3>About Us</h3>
+            <p>We are the team of CO-DES which worked for this project since 15,January 2023. Our main goal was for student to get the proper<br>guidance for every student to achieve for in their life. For this, we were motivated by our family who still at this age tries to achieve a better<br>world by searching for new opportunities that they may gain from this world.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p><i class="fa fa-star-o"></i>Made with by CO-DES Team <i class="fa fa-star-o"></i></p>
+        </section>
+
+
+        <!-------JavaScript for Toggle Menu-------->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                vavLinks.style.right = "0";
+            }
+            function hideMenu(){
+                vavLinks.style.right = "-200px";
+            }
+
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+    
+            }
+        </script>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "agarwalag2000@gmail.com",
+                    Password : "ashudidi",
+                    To : 'agarwalag2000@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "And this is the body"
+        }).then(
+        message => alert(message)
+);
+    }
+</script>
+    </body>
+</html>

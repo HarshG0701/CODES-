@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width , inital-scale=1.0">
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awespme/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="Login_Sign_Up.html">LOGIN</a></li>
+                        <li><img src="images/moon.png" id="icon"></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 style="height: 50vh; margin-top: 100px; text-align: center; color: #fff;">Login / Sign-Up</h1>    
+
+        </section>
+
+        <!-------- Login ------>
+        <div class="row" style="margin-top: 5%; display: flex; justify-content: space-around; background: #fff3f3;">
+            <div class="course-col" style="flex-basis: 31%; background: #fff3f3; border-radius: 10px; margin-top: 5%; padding: 20px 12px; box-sizing: border-box; transition: 0.5s;">
+                <div class="main">
+                    <div class="register" style="margin-left: -5%; margin-top: -10%;">
+                        <form style="margin-left: 5%;">
+                            <h2>Register Here</h2>
+                            <form id="register" method="post">
+                                <label>First Name : </label><br />
+                                <input type="text" name="fname" id="name" placeholder="Enter Your First Name"/><br /><br />
+                                <label>Last Name: </label><br />
+                                <input type="text" name="lname" id="name" placeholder="Enter Your Last Name"/><br /><br />
+                                <label>Your Age : </label><br />
+                                <input type="number"name="age" id="name" placeholder="How old are You?"/><br /><br />
+                                <label>Email / Phone No. : </label><br />
+                                <input type="email" name="email" id="name" placeholder="Enter Your Valid Email or Mobile Number"/><br /><br />
+                                <label>Gender : </label><br />&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="gender" id="male" /> &nbsp;
+                                <span id="male">Male</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="gender" id="female" />&nbsp;
+                                <span id="female">Female</span><br /><br />
+                                <label>Known Language : </label><br /> &nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="lang" id="hindi" />&nbsp;
+                                <span id="hindi">Hindi</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="lang" id="eng" /> &nbsp;
+                                <span id="eng">English</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="lang" id="urdu" />&nbsp;
+                                <span id="urdu">Urdu</span> <br /><br />
+                                <input type="submit" value="Submit" name="submit" id="submit" />
+                            </form>
+                        </form>
+                    </div>
+                    <!--end register-->
+                </div>
+            </div>
+            <!--end main-->
+
+            <!---- Sign Up ----->
+            <div class="course-col" style="flex-basis: 31%; background: #fff3f3; border-radius: 10px; margin-top: 5%; padding: 20px 12px; box-sizing: border-box; transition: 0.5s;">
+                <div id="login">
+                    <input type="email" placeholder="Email or Phone Number" />
+                    <input type="password" placeholder="Password" />
+                    <input type="button" value="Log In" id="login-button" />
+                    <a href="#">Forgot Password?</a>
+                    <hr style="width: 95%;" />
+                    <input type="button" value="Create New Account" id="create-new-account"/>
+                </div> <br><br>
+                <h3>In case, you get trouble in filling the Registration Form, we provided an alternative by filling the Google Form. All you need to do is scan the below QR Code.</h3>
+                <img src="images/Login_Form.png", alt="LondonTower", style="height: 50vh; width: 100%;">
+            </div>        
+        </div>
+
+        <!----Course ----->
+
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>Lorem ipsum dolor sit amet, consectectur addsjbjsdibcudbcibso.</p>
+        
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>sdbjosdboibs dboicsoi bs dbco isbdocisodi b  dboisoicbics dbosicoibscnck.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>sdbjosdboibs dboicsoi bs dbco isbdocisodi b  dboisoicbics dbosicoibscnck.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>sdbjosdboibs dboicsoi bs dbco isbdocisodi b  dboisoicbics dbosicoibscnck.</p>
+                </div>
+            </div>
+        </section>
+
+        <!----- campus ----->
+
+        <section class="campus">
+            <h1>Our Global Campus</h1>
+            <p>sxbiusbi diucbciducs dbciubsocis dcoisdb</p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="images/london.png">
+                    <div class="layer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/newyork.png">
+                    <div class="layer">
+                        <h3>NEW YORK</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/washington.png">
+                    <div class="layer">
+                        <h3>WASHINGTON</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!---- Facilities ---->
+
+        <section class="Facilities">
+            <h1>Our Facilities</h1>
+            <p>The website provides Facilities which refer to the various services, features, and functionalities that a website may offer to its users. These facilities are designed to enhance the user experience and provide users with the tools and resources they need to achieve their goals on the website. </p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>Email Alerts</h3>
+                    <p>Users may be able to sign up for email alerts for job openings, news updates, or other relevant information.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>User registration and login</h3>
+                    <p>Websites may allow users to create an account and log in to access personalized content, services, and features.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Search Functionality</h3>
+                    <p>A search bar can help users quickly find the information they are looking for on the website.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/Social_Media.png">
+                    <h3>Social media integration</h3>
+                    <p>The website may integrate with social media platforms to allow users to share content and job postings with their networks.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/Mobile_Responsive.png">
+                    <h3>Mobile responsiveness</h3>
+                    <p>With more and more people accessing the internet on their mobile devices, websites need to be mobile-friendly and responsive.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/Customer_Support.png">
+                    <h3>Customer support</h3>
+                    <p>Websites may provide customer support through various channels, such as email, phone, or live chat.</p>
+                </div>
+            </div>
+
+            
+        </section>
+
+
+        <!----testimonials----->
+
+        <section class="testimonials">
+            <h1>What Our Motivator Says</h1>
+            <p>Its not a project which was originated by some college students. We all got inspiration from those who believed in happy life<br>with sound mind to choose path easily for their life.</p>
+
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/user1.png">
+                    <div>
+                        <p>I FAILED IN SOME SUBJECTS IN EXAM, BUT MY FRIEND PASSED<br>IN ALL, NOW HE IS AN ENGINEER IN MICROSOFT. AND I AM THE OWNER OF MICROSOFT.</p>
+                        <h3>BILL GATES</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/user2.png">
+                    <div>
+                        <p>THE PEOPLE WHO ARE CRAZY ENOUGH TO BELIEVE THEY<br>CAN CHANGE THE WORLD ARE THE ONES WHO DO.</p>
+                        <h3>STEVE JOBS</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Call To Action -->
+
+        <section class="cta">
+            <h1>Enroll for Our Various Online Courses<br>Anywhere From The World</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+        </section>
+
+
+        <!-- Footer -->
+
+        <section class="footer">
+            <h3>About Us</h3>
+            <p>We are the team of CO-DES which worked for this project since 15,January 2023. Our main goal was for student to get the proper<br>guidance for every student to achieve for in their life. For this, we were motivated by our family who still at this age tries to achieve a better<br>world by searching for new opportunities that they may gain from this world.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p><i class="fa fa-star-o"></i> Made with by CO-DES Team <i class="fa fa-star-o"></i></p>
+        </section>
+
+
+        <!-------JavaScript for Toggle Menu-------->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                vavLinks.style.right = "0";
+            }
+            function hideMenu(){
+                vavLinks.style.right = "-200px";
+            }
+        </script>
+        <script>
+        
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+    
+            }
+        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "ashtoshag20002000@gmail.com",
+                    Password : "H@ppy309",
+                    To : 'ashtoshag2000@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+            } 
+        </script>
+    </body>
+</html>
